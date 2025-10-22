@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Form</title>
+<style>
+  body {
+    background-color: #4b3cb8;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td {
+    padding: 8px;
+  }
+  input, select, textarea {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+  }
+  input[type="submit"], input[type="reset"] {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 12px;
+    margin: 5px;
+  }
+</style>
+</head>
+<body>
+
+<h2>STUDENT ADMISSION FORM</h2>
+
+<form>
+  <table>
+    <tr><td>FIRST NAME:</td><td><input type="text" maxlength="30"> (max 30 characters A-Z)</td></tr>
+    <tr><td>LAST NAME:</td><td><input type="text" maxlength="30"> (max 30 characters A-Z)</td></tr>
+    <tr><td>DATE OF BIRTH:</td><td>
+      Day: <input type="number" min="1" max="31" size="2"> 
+      Month: <input type="number" min="1" max="12" size="2">
+      Year: <input type="number" min="1900" max="2025" size="4">
+    </td></tr>
+    <tr><td>EMAIL ID:</td><td><input type="email"></td></tr>
+    <tr><td>MOBILE NUMBER:</td><td><input type="text" maxlength="10"> (10 digit number)</td></tr>
+    <tr><td>GENDER:</td><td>
+      <input type="radio" name="gender"> Male
+      <input type="radio" name="gender"> Female
+    </td></tr>
+    <tr><td>ADDRESS:</td><td><textarea rows="3" cols="30"></textarea></td></tr>
+    <tr><td>CITY:</td><td><input type="text" maxlength="30"></td></tr>
+    <tr><td>PIN CODE:</td><td><input type="text" maxlength="6"></td></tr>
+    <tr><td>STATE:</td><td><input type="text" maxlength="30"></td></tr>
+    <tr><td>COUNTRY:</td><td><input type="text" value="India"></td></tr>
+    <tr><td>HOBBIES:</td>
+      <td>
+        <input type="checkbox"> Drawing
+        <input type="checkbox"> Singing
+        <input type="checkbox"> Dancing
+        <input type="checkbox"> Sketching
+        <input type="checkbox"> Others
+      </td>
+    </tr>
+  </table>
+
+  <h3>QUALIFICATION</h3>
+  <table border="1">
+    <tr><th>Sl.No.</th><th>Examination</th><th>Board</th><th>Percentage</th><th>Year of Passing</th></tr>
+    <tr><td>1</td><td>Class X</td><td></td><td></td><td></td></tr>
+    <tr><td>2</td><td>Class XII</td><td></td><td></td><td></td></tr>
+    <tr><td>3</td><td>Graduation</td><td></td><td></td><td></td></tr>
+    <tr><td>4</td><td>Masters</td><td></td><td></td><td></td></tr>
+  </table>
+
+  <h3>COURSES APPLIED FOR</h3>
+  <input type="radio" name="course"> BCA
+  <input type="radio" name="course"> B.Com
+  <input type="radio" name="course"> B.Sc
+  <input type="radio" name="course"> B.A
+
+  <br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
